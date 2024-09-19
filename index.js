@@ -6,6 +6,8 @@ const
   moment = require('moment'),
   Swag = require('swag');
 
+moment.locale('pt-br');
+
 Swag.registerHelpers(handlebars);
 
 handlebars.registerHelper({
@@ -41,7 +43,7 @@ handlebars.registerHelper({
     {
       return moment(date).format('MMM YYYY');
     }
-    else return "Present";
+    else return "Presente";
   },
 
   even: function (index) {

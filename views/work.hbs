@@ -1,8 +1,8 @@
 {{#if resume.work.length}}
 <section id="work">
-    <h2>Work Experience</h2>
+    <h2>Experiência Profissional</h2>
     {{#each resume.work}}
-        {{#> item title=name subtitle=position startDate=startDate endDate=endDate}}
+        {{#> item title=company subtitle=position startDate=startDate endDate=endDate}}
 
         {{#if highlights.length}}
         <ul class="highlights">
