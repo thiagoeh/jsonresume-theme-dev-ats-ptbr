@@ -131,8 +131,11 @@ a {
         display: none;
     }
     .section {
-        page-break-inside: avoid; 
         margin-bottom: 20px; 
+    }
+
+    .item {
+        page-break-inside: avoid; 
     }
 
     .section h2 {
