@@ -17,6 +17,13 @@
         {{#if url~}}
         <span class="vertical-separator">{{wrapURL url}}</span>
         {{~/if}}
+        {{#if profiles~}}
+        {{#each profiles}}
+        <span class="vertical-separator">
+            <a href="{{url}}" target="_blank">{{network}}</a>
+        </span>
+        {{/each}}
+        {{~/if}}
     </div>
     {{#if summary}}
     <div class="summary">
