@@ -4,6 +4,12 @@
     {{#each resume.work}}
         {{#> item title=company subtitle=position startDate=startDate endDate=endDate}}
 
+        {{#if summary}}
+        <div class="summary">
+            <p>{{summary}}</p>
+        </div>
+        {{/if}}
+
         {{#if highlights.length}}
         <ul class="highlights">
             {{#each highlights}}

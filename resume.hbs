@@ -15,33 +15,51 @@
     <body>
 
     <div id="resume">
+        {{#if resume.basics}}
         <div class="section">
             {{> basics }}
         </div>
+        {{/if}}
+        {{#if resume.skills.length}}
         <div class="section">
             {{> skills }}
         </div>
+        {{/if}}
+        {{#if resume.work.length}}
         <div class="section">
             {{> work }}
         </div>
+        {{/if}}
+        {{#if resume.education.length}}
         <div class="section">
             {{> education }}
         </div>
+        {{/if}}
+        {{#if resume.certificates.length}}
         <div class="section">
             {{> certifications }}
         </div>
+        {{/if}}
+        {{#if resume.projects.length}}
         <div class="section">
-            {{> projects}}
+            {{> projects }}
         </div>
+        {{/if}}
+        {{#if resume.awards.length}}
         <div class="section">
             {{> awards }}
         </div>
-        <div class="section"></div>
+        {{/if}}
+        {{#if resume.volunteer.length}}
+        <div class="section">
             {{> volunteer }}
         </div>
-        <div class="section"></div>
+        {{/if}}
+        {{#if resume.languages.length}}
+        <div class="section">
             {{> languages }}
         </div>
+        {{/if}}
     </div>
     
     </body>
